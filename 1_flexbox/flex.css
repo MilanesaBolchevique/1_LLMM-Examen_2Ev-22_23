@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #C3C3C3;
+    padding: 20px;
+    min-height: 350px;
+    align-items: center;
+}
+.contenedor div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.hijo1{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hijos{
+    justify-content: center;
+    background-color:#606060;
+    min-height: 50px;
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.hijo2>.hijos{
+    height: 12rem;
+
+}
+@media screen and (max-width: 700px){
+    .hijos{
+        padding: 0;
+    }
+   .hijo1>.hijos{ 
+    max-width:300px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-bottom: 2rem;
+
+   }
+   .contenedor{
+    flex-direction: column;
+   }
+   .contenedor div{
+    flex-direction: row;
+    width: 100%;
+   }
+
+}
